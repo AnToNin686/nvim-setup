@@ -34,4 +34,23 @@ return {
       LSPLoading10 = "⠏",
     },
   },
+  {
+    "onsails/lspkind.nvim",
+    opts = function(_, opts)
+      -- use codicons preset
+      opts.preset = "codicons"
+      opts.mode = "symbol_text"
+      opts.symbol_map = {
+        Array = "",
+        Boolean = "",
+        Key = "",
+        Namespace = "",
+        Null = "",
+        Number = "",
+        Object = "",
+        Package = "",
+        String = "",
+      }
+    end,
+  },
 }
